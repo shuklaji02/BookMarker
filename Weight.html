@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weight Converter</title>
+    <style>
+      span {
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .myConverter {
+        border: 5px outset rgba(255, 0, 0, 0);
+        background-color: rgba(98, 98, 137, 0.9);
+        border-radius: 20px;
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        opacity: 30;
+        min-height: 300px;
+        word-spacing: 10px;
+        padding-top: 100px;
+        margin-top: 80px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .main {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body style="background-image: url('A7301919.jpg')">
+    <h1 style="color: rgb(3, 3, 0)">WEIGHT CONVERTER</h1>
+
+    <div class="myConverter">
+      <p class="main">
+        <label>KILOGRAM </label>
+        <input
+          id="kilogram"
+          type="number"
+          placeholder="kilograms"
+          oninput="kiloweightConvert(this.value)"
+          onchange="kiloweightConvert(this.value)"
+        />
+      </p>
+
+      <!-- output field-->
+
+      <div class="box">
+        <p>POUND: <span id="Pounds"></span></p>
+
+        <p>OUNCE: <span id="Ounces"></span></p>
+      </div>
+      <div class="box">
+        <p>GRAM: <span id="Grams"></span></p>
+
+        <p>STONE: <span id="Stones"></span></p>
+      </div>
+    </div>
+    <script>
+      //function that evaluates the weight and return result
+      function kiloweightConvert(value) {
+        document.getElementById("Pounds").innerHTML = value * 2.2046;
+        document.getElementById("Ounces").innerHTML = value * 35.274;
+        document.getElementById("Grams").innerHTML = value * 1000;
+        document.getElementById("Stones").innerHTML = value * 0.1574;
+      }
+    </script>
+  </body>
+</html>

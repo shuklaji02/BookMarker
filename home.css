@@ -1,0 +1,111 @@
+
+* {
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    /*text-align: ;*/
+}
+@keyframes mymove {
+  from {background-color: lightyellow;}
+  to {background-color: dimgrey;}
+}
+
+h1{ 
+    text-decoration: underline;
+    color: black;
+    font-size: 50px;
+}
+
+h2{
+    color: yellow;
+    fol
+}
+
+.head {
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px;
+}
+
+figure {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.course a figure {
+    border-radius: 10%;
+    margin: 20px;
+}
+
+.course a img {
+    width: 200px;
+    height: 200px;
+    transition: all .5s ease;
+}
+
+.div1 {
+    margin-left: 400px;
+}
+
+.course a img:hover {
+    transform: scale(1.2);
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h1 {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.main {
+    padding-left: 20%;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:910px) {
+    .div1 {
+        margin-left: 0px;
+    }
+    .main {
+        padding-left: 5%;
+    }
+}

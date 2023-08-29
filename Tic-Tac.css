@@ -1,0 +1,81 @@
+* {
+    background-image: url('tic-tacbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Heading */
+
+h1 {
+    color: orangered;
+    font-size: 45px;
+}
+
+
+/* 3*3 Grid */
+
+#b1,
+#b2,
+#b3,
+#b4,
+#b5,
+#b6,
+#b7,
+#b8,
+#b9 {
+    width: 80px;
+    height: 52px;
+    margin: auto;
+    border: 4px solid #C400FF;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Reset Button */
+
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 5px solid dodgerblue;
+    margin: auto;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#but:hover {
+    color: greenyellow;
+}
+
+
+/* Player turn space */
+
+#print {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FAFF00;
+    font-size: 20px;
+}
+
+
+/* Main Container */
+
+#main {
+    text-align: center;
+}
+
+
+/* Game Instruction Text */
+
+#ins {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(2, 206, 53);
+    font-size: 17px;
+}

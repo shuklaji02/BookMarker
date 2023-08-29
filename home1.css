@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&family=Syne+Mono&display=swap');
+
+
+* {
+    background-color: rgb(164, 211, 211);
+}
+
+
+.head {
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px;
+}
+
+figure {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.course a figure {
+    border-radius: 10%;
+    margin: 20px;
+}
+
+.course a img {
+    width: 200px;
+    height: 200px;
+    transition: all .5s ease;
+}
+
+.div1 {
+    margin-left: 400px;
+}
+
+
+.course a img:hover {
+    transform: scale(1.2);
+}h4{
+    text-align: center;
+}
